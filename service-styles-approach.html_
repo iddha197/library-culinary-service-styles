@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Service Styles & Our Approach | Culinary Service Styles Hub</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff5f5;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1536305030015-45c49fb6a2c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(139, 0, 0, 0.2);
+      border: 1px solid #d4a5a5;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #8B0000;
+      font-family: 'Georgia', serif;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #8B0000;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #6B0000;
+    }
+
+    h2 {
+      color: #8B0000;
+      font-family: 'Georgia', serif;
+      border-bottom: 2px dashed #d4a5a5;
+      padding-bottom: 8px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .card, .approach-block {
+      background: #fffafa;
+      border: 1px solid #d4a5a5;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 6px rgba(139, 0, 0, 0.08);
+    }
+
+    .card h3, .approach-block h3 {
+      color: #8B0000;
+      margin-top: 0;
+    }
+
+    .card p, .approach-block p {
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    .learn-more {
+      color: #8B0000;
+      font-weight: bold;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 0.95em;
+    }
+
+    .details {
+      display: none;
+      font-size: 0.9em;
+      margin-top: 10px;
+      color: #555;
+      line-height: 1.5;
+      border-top: 1px solid #d4a5a5;
+      padding-top: 10px;
+    }
+
+    .approach-details h3 {
+      color: #6B0000;
+      border-bottom: 1px dashed #d4a5a5;
+      padding-bottom: 6px;
+      margin-top: 30px;
+    }
+
+    .approach-details p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background: #8B0000;
+      color: white;
+      padding: 15px;
+      border-radius: 0 0 10px 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Culinary Service Styles Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="service-styles-approach.html.">Our Services and Approach</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="techstack.html">Tech Stack</a></li>
+          <li><a href="developmentlog.html">Development Log</a></li>
+          <li><a href="deployment-support.html">Deployment-Support</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section">
+      <h2>Service Styles</h2>
+      <div class="card">
+        <h3>Buffet</h3>
+        <p>Self-service where guests choose from a spread of dishes. Ideal for large gatherings.</p>
+        <span class="learn-more" onclick="toggleDetails(this)">Learn More</span>
+        <div class="details">Buffet service encourages interaction and offers a wide variety of choices. It's commonly used at weddings and casual events.</div>
+      </div>
+      <div class="card">
+        <h3>American</h3>
+        <p>Plated service where guests are served individually at their tables.</p>
+        <span class="learn-more" onclick="toggleDetails(this)">Learn More</span>
+        <div class="details">American service emphasizes portion control and aesthetics. It’s popular in restaurants and banquets.</div>
+      </div>
+      <div class="card">
+        <h3>French</h3>
+        <p>Formal service with tableside preparation or presentation by staff.</p>
+        <span class="learn-more" onclick="toggleDetails(this)">Learn More</span>
+        <div class="details">Used in upscale restaurants, French service highlights elegance and server expertise, such as flambéing or carving.</div>
+      </div>
+      <div class="card">
+        <h3>Russian</h3>
+        <p>Food is brought on platters and served by staff directly to guests’ plates.</p>
+        <span class="learn-more" onclick="toggleDetails(this)">Learn More</span>
+        <div class="details">Russian service is structured and formal, offering refined guest experience. Common at gala dinners.</div>
+      </div>
+      <div class="card">
+        <h3>Banquet Service</h3>
+        <p>Pre-plated meals served simultaneously to all guests. Ideal for large functions.</p>
+        <span class="learn-more" onclick="toggleDetails(this)">Learn More</span>
+        <div class="details">Common in weddings and corporate events, banquet service ensures efficient and uniform delivery of meals.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Our Approach</h2>
+      <div class="approach-block">
+        <h3>Student-Centered Learning</h3>
+        <p>Hands-on, real-world culinary experiences that build skills and confidence.</p>
+      </div>
+      <div class="approach-block">
+        <h3>Inclusive & Diverse</h3>
+        <p>Celebrating global cuisines and tailoring services for varied backgrounds.</p>
+      </div>
+      <div class="approach-block">
+        <h3>Technology Integration</h3>
+        <p>Using VR, AI tools, and interactive content to modernize food education.</p>
+      </div>
+      <div class="approach-block">
+        <h3>Industry Collaboration</h3>
+        <p>Partnering with chefs and professionals to ensure practical, relevant learning.</p>
+      </div>
+      <div class="approach-block">
+        <h3>Accessibility Commitment</h3>
+        <p>Offline options, assistive tools, and inclusive navigation for all learners.</p>
+      </div>
+    </section>
+
+    <section class="approach-details">
+      <h2>Details of Our Approach</h2>
+      <h3>Student-Centered Learning</h3>
+      <p>We use practice kitchens, live demos, and simulated environments to prepare students for real-world culinary roles.</p>
+
+      <h3>Inclusive & Diverse</h3>
+      <p>Our platform supports multiple languages and highlights international dishes to ensure cultural relevance and inclusivity.</p>
+
+      <h3>Technology Integration</h3>
+      <p>Students benefit from virtual kitchen tours, AI feedback, and self-paced interactive modules, accessible on any device.</p>
+
+      <h3>Industry Collaboration</h3>
+      <p>We consult industry experts to align our curriculum with trends and best practices in hospitality and food service.</p>
+
+      <h3>Accessibility Commitment</h3>
+      <p>We provide screen-reader compatibility, keyboard-friendly layouts, and downloadable materials for every learner.</p>
+    </section>
+
+    <footer>
+      © 2025 Culinary Service Styles Hub. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    function toggleDetails(el) {
+      const details = el.nextElementSibling;
+      if (details.style.display === 'block') {
+        details.style.display = 'none';
+        el.textContent = 'Learn More';
+      } else {
+        details.style.display = 'block';
+        el.textContent = 'Show Less';
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
